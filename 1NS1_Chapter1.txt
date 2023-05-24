@@ -1,0 +1,31 @@
+Introduction to Operating System
+
+1- An Operating System is a program that manages the computer hardware.
+2- It also provides the basis for Application Program and acts as a intermediary between computer User and computer hardware.
+Example- Linux, Ubuntu Fedora, Windows, Mac OSx, iOS, Black Berry, Android.
+
+__________***************__________
+
+System software is responsible for managing the computer's hardware and resources, while application software is used to perform specific tasks.
+
+System Software :
+System software is the software that controls the basic functions of a computer. It includes the operating system, device drivers, and other programs that are essential for the computer to function. System software is typically written in low-level languages that are close to the hardware.
+
+Example : 
+
+1- Operating systems: Windows, macOS, Linux, Android, iOS
+
+2- Device drivers: Software that allows the computer to communicate with hardware devices such as printers, scanners, and hard drives
+
+3- Compilers: Software that translates high-level programming languages into low-level machine code
+
+
+
+Application Software:
+Application software is the software that users interact with to perform specific tasks. It includes word processors, web browsers, games, and other programs that are not essential for the computer to function. Application software is typically written in high-level languages that are easier for humans to read and write.
+
+Example: 
+
+1- Word processors: Microsoft Word, Google Docs, LibreOffice Writer
+2- Web browsers: Google Chrome, Mozilla Firefox, Safari
+3- Games: Minecraft, Fortnite, Grand Theft Auto V

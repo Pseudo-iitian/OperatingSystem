@@ -1,0 +1,21 @@
+************ Types of Operating System **************
+
+1- Batch OS
+2- Time Sharing OS
+3- Distributed OS
+4- Network OS
+5- Real time OS
+6- Multi programming OS/ multi tasking/ multiprocessing OS
+
+Goals Of OS
+1- Convenience
+2- Efficiency
+3- Security and privacy
+
+Functions of OS:
+1- It is an iterface between computer hardware and users
+2- Allocation of resources ( acts as a resource manager )
+3- Management of memory, Security,etc.
+
+-----___Done___-----
+2nd video starts

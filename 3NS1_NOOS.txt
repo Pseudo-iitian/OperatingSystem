@@ -1,0 +1,10 @@
+1- If there is no Operating System then we have to write code for each and every task we
+have to do, manually telling to computer hardware each and everything we want to do.
+like - opening ms office, putting it into RAM, then double clicking to open it.
+
+What happend when you click any application software
+Ans -> 
+1- write code to tell the computer hardware that LOAD the Microsoft word into RAM.
+2- Whatever being typed, just display word on screen
+3- tell computer hardware to save it.
+4- explicitly tell computer hardware to perform some task.  
