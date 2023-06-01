@@ -1,0 +1,120 @@
+Basics of operating System are :- (computer System operation)
+
+-> Some basic knowledge of the structure of computer system is  required to understand how operating system work.
+1- A modern general purpose computer system consists of one or more cpu and a number of device controller connnected
+through a common bus that provide access to shared memory.
+
+2- Each device controller is in charge of a specific type of device
+3- The cpu and the device controller can execute concurrently, competiing for memory cycles
+4- to ensure orderly access to the shared memory, a memory controller is provided whose function is to synchronize access to the memory. 
+
+
+Device driver and device controller ---------------------------------------
+
+1- Device Driver                                       Device Controller
+- device driver is one for one hardwar                - device controller can controll more than one hardware devices
+-one hardware supports only one deivce driver              - more than one hardware can support one device controller
+
+
+
+Device driver tell Operating system
+1- printers function
+2- how much space printer will take
+3- how to operate with printer
+4- what is printer, input or output device
+5- Operating system know everything about that printer
+6- it acts as a translator which translate kernel commands to work.
+
+
+
+-----------------------------------------------------------------------------
+
+Some important terms :-
+
+1- Bootstrap Program: The initial program that runs when aa computer is powered up or rebooted.
+- It is stored in the ROM
+- It must know how to load the OS and start executing that system.
+- It must locate and load into memory the OS kernel.
+- The bootstrap program is typically stored in the computer's firmware or on a bootable device, such as a hard drive, solid-state drive, or removable media.
+
+
+- The primary function of a bootstrap program is to initialize the computer system and load the operating system into memory for execution. Here's a high-level overview of how a bootstrap program works:
+
+    1- Power-On or Reset: When a computer system is powered on or reset, the processor starts executing instructions from a predefined memory location, known as the reset vector.
+
+    2- Firmware Execution: The processor initially executes firmware instructions stored in a special chip, such as the BIOS (Basic Input/Output System) or UEFI (Unified Extensible Firmware Interface). This firmware contains the bootstrap program or a component responsible for locating and executing it.
+
+    3- Boot Device Identification: The bootstrap program's first task is to identify and locate the boot device that contains the operating system. It may search for the boot device in a specific order, such as checking the floppy drive, CD/DVD drive, or hard drive.
+
+    4- Boot Device Loading: Once the boot device is identified, the bootstrap program reads the necessary data, typically from a specific sector or partition on the boot device. This data includes the operating system's initial file(s) or a more advanced bootloader responsible for loading the operating system.
+
+    5- Operating System Loading: The bootstrap program transfers control to the loaded bootloader, which, in turn, continues the boot process. The bootloader is responsible for further initializing the system, loading additional components of the operating system into memory, and ultimately launching the operating system kernel.
+
+    6- Operating System Execution: Once the operating system kernel is loaded into memory, the bootstrap program hands over control to the kernel. The operating system takes control of the computer system, initializes its services, and starts running user applications.
+
+
+---------------------------------------------------------------
+
+2- Interrupts:
+
+- The occurence of an event is usually signalled by an interrupt from hardware or software.
+- Hardware may trigger an interrupt at any time by sending a signal to the CPU, usually by the way of the system bus.
+
+-----------------------------------------------------------------------------
+
+
+3- System Call(Monitor call): 
+
+- Software may trigger an interrupt by executing a special operation called system call.
+
+
+Example ---
+
+1- File System Related System Calls:
+open(): Opens a file and returns a file descriptor for further operations.
+read(): Reads data from a file into a buffer.
+write(): Writes data from a buffer to a file.
+close(): Closes a file.
+
+2- Process Control System Calls:
+fork(): Creates a new process by duplicating the existing process.
+exec(): Replaces the current process with a new process.
+exit(): Terminates the current process and returns the exit status.
+wait(): Suspends the execution of the calling process until one of its child processes terminates.
+
+3- Memory Management System Calls:
+malloc(): Allocates a block of memory dynamically.
+free(): Releases a previously allocated block of memory.
+mmap(): Maps a file into memory or allocates memory for file I/O.
+
+4- Input/Output System Calls:
+read(): Reads data from a file descriptor, such as keyboard input.
+write(): Writes data to a file descriptor, such as screen output.
+ioctl(): Performs control operations on devices.
+
+5- Network-related System Calls:
+socket(): Creates a new network socket.
+connect(): Establishes a connection to a remote host.
+send(): Sends data over a network connection.
+recv(): Receives data from a network connection.
+
+6- Time and Date System Calls:
+time(): Retrieves the current system time.
+sleep(): Suspends the execution of a process for a specified amount of time.
+
+7- Interprocess Communication System Calls:
+pipe(): Creates a communication pipe between two processes.
+fork(): Enables communication between parent and child processes.
+msgget(), msgsnd(), msgrcv(): Provides message passing between processes using message queues.
+
+
+--------------------------------------------------------------------------------
+
+
+when the cpu is interrupted, it stops what it is doing and immediately transfer execution to a fixed location
+fixed location - The fixed location usually contains the starting address where the service routine of the interrupt
+is located.
+
+service routine - what interrupts actually wanted to do is written in service routine
+the interrupt service routine executes
+on completion, the cpu resumes the interrupted computation
